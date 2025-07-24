@@ -35,10 +35,8 @@ nav a {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
+@media (max-width: 600px) {
+  
 
   header {
     flex-direction: column;
@@ -58,6 +56,7 @@ nav a {
     width: 100%;
     height: auto;
   }
+
 
   .products h2 {
     font-size: 1.2rem;
@@ -511,16 +510,82 @@ nav a {
  
   transition: filter 0.3s;
 }
+
+
 @media (max-width: 768px) {
+  .matha {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .flower-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flower-image img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .badge {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  .deal-text-large {
+    margin: 40px auto;
+    width: 100%;
+    font-size: 22px;
+  }
+
   .subscribe-form {
     flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
   }
 
   .subscribe-form input[type="email"],
   .subscribe-form button {
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 100%;
   }
 
   .footer-container {
@@ -530,6 +595,11 @@ nav a {
   }
 
   .footer-links {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    padding-left: 0;
   }
 }
