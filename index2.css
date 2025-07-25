@@ -198,6 +198,7 @@ nav a {
 .flower-section {
   padding: 50px 50px;
   gap: 500px;
+  max-width: 100%;
 }
 
 .flower-container {
@@ -512,17 +513,34 @@ nav a {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .matha {
-    flex-direction: column;
+    
     align-items: flex-start;
-    padding: 10px 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    justify-content: space-between;
+        display: flex;
+        width: 100%;
+  }
+
+  .cirt {
+    display: none;
+  }
+
+  .curt {
+    display: none;
+  }
+
+  .cort {
+    display: none;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin-top: 10px;
   }
 
@@ -532,53 +550,88 @@ nav a {
 
   .hero {
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
     text-align: center;
-    width: 70%;
+    width: 100%;
+  }
+
+  .hero-text h1{
+    font-size: larger;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
   }
 
   .hero-text { 
-    max-width: 90%;
-    padding-left: 10px;
+    max-width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
   }
 
   .hero-image img {
     max-width: 100%;
+    margin-left: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 .plants {
-  width: 70%;
-  padding-left: 10px;
+  width: 100%;
+  padding-left: 2px;
+    padding-right: 2px;
 }
   .card-parents {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    width: 80%;
+    width: 100%;
+  }
+
+  .flower-section {
+    max-width: 1700px;
+    
   }
 
   .flower-container {
     flex-direction: column;
-    gap: 20px;
-    padding-left: 0px;
-    width: 80%;
+    
+   padding-left: 0px;
+    width: 370px;
     margin-left: 0px;
   }
 
   .flower-image img {
     margin: 0px;
-    width: 80%;
+    width: 100%;
   }
 
   .badge {
     display: none;
   }
 
+.left-cards {
+  max-width: 500px;
+}
+
+.deals-wrapper {
+  max-width: 100%;
+}
+
+.deal-card small {
+  width: 367px;
+  height: 200px;
+}
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 10px;
-    width: 80%;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 100%;
   }
   .product-card {
-    max-width: 120px;
+    max-width: 200px;
   }
 
   .deal-text-large {
@@ -590,7 +643,8 @@ nav a {
   .subscribe-form {
     flex-direction: column;
     width: 100%;
-    padding: 0 10px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   .subscribe-form input[type="email"],
@@ -612,6 +666,7 @@ nav a {
   }
 
   .footer-links ul {
-    padding-left: 0;
+   padding-left: 2px;
+    padding-right: 2px;
   }
 }
