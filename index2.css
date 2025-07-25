@@ -385,37 +385,28 @@ nav a {
   background-color: #eee;
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
-  .deals-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .deal-card.large {
-    width: 100%;
-  }
-}.last {
-  margin: 0;
+.last {
+  margin: 0px;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
 }
 
 .subscribe-section {
-  background-image: url('B12A02-Responsive-Flowers/assets/news-letter-bg.png'); /* Replace with your background */
-  
+  /* Replace with your background */
+  width: 100%;
   background-position: center;
   color: white;
-  padding: 80px 20px;
+  padding: 80px 0px;
   text-align: center;
   position: relative;
 }
 
 .overlay {
-  
-  padding: 40px;
+  margin: 0px;
+  padding: 60px;
   border-radius: 10px;
   display: inline-block;
+  width: 800px;
 }
 
 .subscribe-section h2 {
@@ -426,7 +417,7 @@ nav a {
 .subscribe-form {
   display: flex;
   justify-content: center;
-  width: 700px;
+ max-width: 900px;
   margin: 0px;
   flex-wrap: wrap;
 }
@@ -641,32 +632,64 @@ nav a {
   }
 
   .subscribe-form {
-    flex-direction: column;
-    width: 100%;
-    padding-left: 2px;
-    padding-right: 2px;
+    flex-direction: row;
+    display: flex;
+    width: 250px;
+    
+  }
+  .subscribe-section {
+   max-width: 100%;
   }
 
-  .subscribe-form input[type="email"],
+  .overlay {
+  max-width: 700px;
+  }
+
+  .overlay h2 {
+    width: 300px;
+  }
+
   .subscribe-form button {
-    width: 100%;
+    max-width: 100px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subscribe-form input[type="email"]
+  {
+    max-width: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
   }
 
   .footer-container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 0px;
   }
 
   .footer-links {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
+    padding-top: 0px;
+    padding-left: 10px;
+    gap: 10px;
+    padding-bottom: 0px;
   }
 
   .footer-links ul {
    padding-left: 2px;
     padding-right: 2px;
+    gap: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
 }
