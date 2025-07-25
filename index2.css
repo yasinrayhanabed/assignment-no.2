@@ -1,6 +1,11 @@
+
+body {
+  overflow-x: hidden;
+}
+
 .prothom {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Noto Serif', serif;
   background-color: #f9fbff;
   color: #333;
 }
@@ -18,7 +23,7 @@
   font-size: 24px;
   color: #f4741e;
   font-weight: bold;
-  font-family: 'Georgia', serif;
+  font-family: 'Noto Serif', serif;
 }
 
 nav a {
@@ -43,7 +48,7 @@ nav a {
 }
 
 .hero-text {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .hero-text h1 {
@@ -62,7 +67,7 @@ nav a {
 }
 
 .hero-image img {
-  max-width: 400px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -81,7 +86,7 @@ nav a {
   color: #666;
 }
 .card-parents {
-  font-family: Arial, sans-serif;
+  font-family: 'Noto Serif', serif;
   background-color: #f9fbff;
   margin: 0;
   padding: 0;
@@ -98,9 +103,7 @@ nav a {
 
 .product-card {
   background: #fff;
-  
-  width: 220px;
-  
+
   text-align: center;
   
 }
@@ -140,7 +143,7 @@ nav a {
 
 .ashol {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Serif', serif;
   background-color: #f5f7fa;
   color: #333;
   
@@ -217,7 +220,7 @@ nav a {
 
 .indulge {
   
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Noto Serif', serif;
   background-color: #f5f7fa;
   color: #333;
   padding: auto;
@@ -227,6 +230,8 @@ nav a {
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .deals-header {
@@ -252,37 +257,47 @@ nav a {
 
 .deals-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+padding: 0px 10px;
+gap: 20px;
 }
+
 
 .left-cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  min-width: 260px;
-  max-width: 360px;
+  width: 30%;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.large{
+  width: 70%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
 }
 
 .deal-card {
-  position: relative;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   color: white;
-  padding: 20px;
   display: flex;
-  align-items: flex-end;
-  height: 150px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.deal-card.large {
-  flex: 2;
-  height: 360px;
-  min-width: 300px;
-}
+
 
 .deal-text {
   margin: 40px 48px;
@@ -290,11 +305,13 @@ nav a {
   justify-content: center;
   border-radius: 10px;
   text-align: center;
+  
 }
 
 .deal-text p {
   margin: 0 0 8px;
   font-size: 18px;
+  
 }
 
 .deal-text-large {
@@ -307,7 +324,7 @@ nav a {
   font-size: 28px;
   gap: 0px;
   padding-bottom: 0px;
-
+  color: #eee;
 }
 
 .deal-text-large button{
@@ -338,7 +355,7 @@ nav a {
 
 .last {
   margin: 0px;
-  font-family: 'Segoe UI', sans-serif;
+ font-family: 'Noto Serif', serif;
   background-color: #fff;
 }
 
@@ -347,39 +364,40 @@ nav a {
   width: 100%;
   background-position: center;
   color: white;
-  padding: 80px 0px;
+  padding: 60px;
+  margin: 0 auto;
   text-align: center;
   position: relative;
 }
 
 .overlay {
   margin: 0px;
-  padding: 60px;
   border-radius: 10px;
   display: inline-block;
-  width: 800px;
+  
 }
 
 .subscribe-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
+ margin-right: 40px;
 }
 
 .subscribe-form {
   display: flex;
   justify-content: center;
- max-width: 900px;
+ 
   margin: 0px;
-  flex-wrap: wrap;
+  padding-bottom: 70px;
 }
 
 .subscribe-form input[type="email"] {
   padding: 12px 16px;
-  flex: 1;
   border: none;
   border-radius: 5px 0 0 5px;
   font-size: 16px;
   outline: none;
+  width: 500px;
 }
 
 .subscribe-form button {
@@ -408,8 +426,9 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1100px;
-  margin: auto;
+  margin: 50px;
   gap: 20px;
+  padding-top: 20px;
 }
 
 .footer-left {
@@ -461,7 +480,7 @@ nav a {
     padding-right: 2px;
     display: flex;
     justify-content: space-between;
-    
+    width: 300px;
   }
 
 
@@ -493,7 +512,7 @@ nav a {
     padding-left: 2px;
     padding-right: 2px;
     text-align: center;
-    width: 100%;
+    width: 300px;
   }
 
   .hero-text h1{
@@ -504,7 +523,7 @@ nav a {
   }
 
   .hero-text { 
-    max-width: 100%;
+    width: 300px;
     padding-left: 2px;
     padding-right: 2px;
     align-items: flex-start;
@@ -513,38 +532,42 @@ nav a {
   }
 
   .hero-image img {
-    max-width: 100%;
+    width: 300px;
     margin-left: 5px;
     padding-left: 2px;
     padding-right: 2px;
   }
 .plants {
-  width: 100%;
+  width: 300px;
   padding-left: 2px;
     padding-right: 2px;
 }
   .card-parents {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    width: 100%;
+    width: 300px;
   }
 
   .flower-section {
-    max-width: 100%;
-    padding-left: 20px;
+    width: 300px;
+    
   }
 
   .flower-container {
     flex-direction: column;
     
    padding-left: 0px;
-    width: 370px;
+    width: 300px;
     margin-left: 0px;
   }
 
   .flower-image img {
     margin: 0px;
-    width: 100%;
+    width: 300px;
+  }
+
+  .flower-text {
+    width: 300px;
   }
 
   .badge {
@@ -552,68 +575,98 @@ nav a {
   }
 
 .left-cards {
-  max-width: 500px;
+  width: 100%;
 }
 
-.deals-wrapper {
-  max-width: 100%;
+
+.deals-header{
+  width: 280px;
 }
 
 .deal-card small {
-  width: 367px;
+ width: 200px;
   height: 200px;
 }
 
-.deal-card.large {
-  width: 369px;
-  height: 152px;
+.large {
+  width: 300px;
+  height: 150px;
+}
+
+.latest-deals{
+  width: 400px;
+  margin: 17px 0px;
+  padding: 0px;
 }
 
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 2px;
     padding-right: 2px;
-    width: 100%;
+    width: 30px;
   }
+
+  .deals-wrapper {
+  width: 300px;
+  padding-left: 0px;
+  margin-left: 0px;
+  display: flex;
+
+}
   .product-card {
-    max-width: 190px;
+    width: 140px;
   }
 
   .deal-text-large {
     margin: 40px auto;
-    width: 100%;
+    width: 300px;
     font-size: 22px;
   }
 
   .subscribe-form {
     flex-direction: row;
     display: flex;
-    width: 250px;
+    width: 100%;
     
   }
   .subscribe-section {
-   max-width: 100%;
+   padding-left: 0px;
+   margin-left: 0px;
+   /* width: 300px; */
+   text-align: center;
+   width: 240px;
   }
 
-  .overlay {
-  max-width: 700px;
-  }
+  /* .overlay {
+  width: 100px;
+  } */
 
   .overlay h2 {
-    width: 300px;
+    /* width: 200px; */
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    padding-right:40px;
+    width: 150px;
+    padding-left: 0px;
+    margin-left: -30px;
+    margin-right: 20px;
   }
 
   .subscribe-form button {
-    max-width: 100px;
-    display: flex;
-    flex-direction: row;
+    width: 100px;
+    
   }
 
   .subscribe-form input[type="email"]
   {
-    max-width: 100px;
-    display: flex;
-    flex-direction: row;
+    width: 100px;
   }
 
   .footer-container {
@@ -621,7 +674,8 @@ nav a {
     align-items: flex-start;
     text-align: left;
     justify-content: left;
-    padding: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
   }
 
   .footer-links {
@@ -634,6 +688,10 @@ nav a {
     gap: 10px;
     padding-bottom: 0px;
   }
+
+.hoyna{
+  margin-left: 100px;
+}
 
   .footer-links ul {
    padding-left: 2px;
