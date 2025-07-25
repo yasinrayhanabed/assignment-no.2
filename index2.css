@@ -257,7 +257,6 @@ nav a {
 
 .deals-wrapper {
   display: flex;
-  flex-direction: column;
   width: 100%;
 padding: 0px 10px;
 gap: 20px;
@@ -284,6 +283,7 @@ gap: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
+  flex-direction: column;
 }
 
 .deal-card {
@@ -607,6 +607,8 @@ gap: 20px;
   }
 
   .deals-wrapper {
+    display: flex;
+    flex-direction: column;
   width: 300px;
   padding-left: 0px;
   margin-left: 0px;
