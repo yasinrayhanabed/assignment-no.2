@@ -35,55 +35,6 @@ nav a {
     font-weight: bold;
 }
 
-@media (max-width: 600px) {
-  
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .hero {
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 1.3rem;
-  }
-
-  .hero img {
-    width: 100%;
-    height: auto;
-  }
-
-
-  .products h2 {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-  }
-
-  .product-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .product {
-    padding: 1rem;
-  }
-
-  .product img {
-    width: 100%;
-    height: auto;
-  }
-
-  .product button {
-    width: 100%;
-    padding: 0.5rem;
-  }
-}
-
 .hero {
   display: flex;
   align-items: center;
@@ -192,13 +143,13 @@ nav a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f7fa;
   color: #333;
-  gap: 5000px;
+  
 }
 
 .flower-section {
-  padding: 50px 50px;
-  gap: 500px;
-  max-width: 100%;
+  padding-left: 2px;
+  
+  width: 1200px;
 }
 
 .flower-container {
@@ -208,7 +159,7 @@ nav a {
   justify-content: center;
   max-width: 1700px;
   margin: 30px 10px;
-  gap: 0px;
+  gap: 70px;
 }
 
 .flower-image {
@@ -506,15 +457,14 @@ nav a {
 
 @media screen and (max-width: 576px) {
   .matha {
-    
-    align-items: flex-start;
     padding-left: 2px;
     padding-right: 2px;
     display: flex;
     justify-content: space-between;
-        display: flex;
-        width: 100%;
+    
   }
+
+
 
   .cirt {
     display: none;
@@ -531,7 +481,6 @@ nav a {
   nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-top: 10px;
   }
 
@@ -581,8 +530,8 @@ nav a {
   }
 
   .flower-section {
-    max-width: 1700px;
-    
+    max-width: 100%;
+    padding-left: 20px;
   }
 
   .flower-container {
@@ -615,6 +564,11 @@ nav a {
   height: 200px;
 }
 
+.deal-card.large {
+  width: 367px;
+  height: 150px;
+}
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 2px;
@@ -622,7 +576,7 @@ nav a {
     width: 100%;
   }
   .product-card {
-    max-width: 200px;
+    max-width: 190px;
   }
 
   .deal-text-large {
@@ -651,7 +605,6 @@ nav a {
 
   .subscribe-form button {
     max-width: 100px;
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
   }
@@ -659,7 +612,6 @@ nav a {
   .subscribe-form input[type="email"]
   {
     max-width: 100px;
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
   }
@@ -669,9 +621,7 @@ nav a {
     align-items: flex-start;
     text-align: left;
     justify-content: left;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-bottom: 0px;
+    padding: 5px;
   }
 
   .footer-links {
